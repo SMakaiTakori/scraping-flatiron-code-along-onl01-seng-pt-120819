@@ -28,9 +28,8 @@ class Scraper
       course.title = post.css("h2").text
       course.schedule = post.css(".date").text
       course.description = post.css("p").text
-  
-  Scraper.new.get_page
-  
+    end
+  end
   
   def print_courses
     self.make_courses
